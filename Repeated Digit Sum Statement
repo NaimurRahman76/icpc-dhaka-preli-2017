@@ -1,0 +1,36 @@
+You are given a function f which is defined as:
+
+int f(n) {
+   while (n >= 10) {
+      n = sod(n);
+   }
+   return n;
+}
+
+Here, sod(n) indicates the sum of digits of n. So, f(7689) = 3 (7689 => 30 => 3).
+
+Given, a and b, you need to find the value of f(ab).
+
+Input
+
+Input starts with an integer T (≤ 50), denoting the number of test cases. 
+Each case starts with two big integers a and b (0 ≤ a, b < 1050,000, a + b > 0).
+
+Output
+
+For each case, print the case number and f(ab).
+
+Warning: Use faster I/O.
+
+Sample
+Input	
+4
+2 5
+7 2
+8 1
+1 1234567890123456789012345
+Output
+Case 1: 5
+Case 2: 4
+Case 3: 8
+Case 4: 1
